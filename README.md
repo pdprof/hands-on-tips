@@ -19,6 +19,9 @@ You can change "ibmjava" word to the other java docker image.
 I put a Dockerfile under was90 directory to use tWAS docker image in this repositry.
 Edit was version tag to the latest which is available from the public docker repository.
 ```
+# After pull this repository
+cd was90
+
 # Edit WAS version
 vi Dockerfile
 
@@ -27,7 +30,6 @@ vi virtual-host.py
 vi start.sh
 
 # Build
-cd was90
 docker build -t was90 .
 
 # Start
